@@ -3,11 +3,11 @@
 <plist version="1.0">
   <dict>
     <key>CFBundleIdentifier</key>
-      <string>com.jazzy.versionupdatechecker</string>
+      <string>com.jazzy.skversion</string>
     <key>CFBundleName</key>
-      <string>VersionUpdateChecker</string>
+      <string>SKVersion</string>
     <key>DocSetPlatformFamily</key>
-      <string>versionupdatechecker</string>
+      <string>skversion</string>
     <key>isDashDocset</key>
       <true/>
     <key>dashIndexFilePath</key>

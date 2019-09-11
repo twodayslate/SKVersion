@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'VersionUpdateChecker'
+  s.name             = 'SKVersion'
   s.version          = '1.0.0'
   s.summary          = 'Version Update Checker'
   s.swift_versions   = ['5.0']
@@ -16,17 +16,17 @@ Pod::Spec.new do |s|
 App Store Version update checker
                        DESC
 
-  s.homepage         = 'https://github.com/twodayslate/VersionUpdateChecker'
+  s.homepage         = 'https://github.com/twodayslate/SKVersion'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'twodayslate' => 'zac@gorak.us' }
-  s.source           = { :git => 'https://github.com/twodayslate/VersionUpdateChecker.git', :tag => "v#{s.version}" }
+  s.source           = { :git => 'https://github.com/twodayslate/SKVersion.git', :tag => "v#{s.version}" }
   s.social_media_url = 'https://twitter.com/twodayslate'
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'VersionUpdateChecker/*'
-  s.exclude_files = [ 'VersionUpdateChecker/Info.plist']
+  s.source_files = 'SKVersion/*'
+  s.exclude_files = [ 'SKVersion/Info.plist']
 
-  s.public_header_files = 'VersionUpdateChecker/*.h'
+  s.public_header_files = 'SKVersion/*.h'
   s.dependency 'Version', '~> 0.7.0'
 end

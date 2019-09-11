@@ -10,13 +10,13 @@ fi
 
 set -e # don't print
 
-module="VersionUpdateChecker"
-github="twodayslate/VersionUpdateChecker"
-project="VersionUpdateChecker.xcodeproj"
-scheme="VersionUpdateChecker"
+module="SKVersion"
+github="twodayslate/SKVersion"
+project="SKVersion.xcodeproj"
+scheme="SKVersion"
 
 # get version number from podspec
-version="$(egrep "^\s*s.version\s*" VersionUpdateChecker.podspec | awk '{ gsub("\"", "", $3);  print $3 }')"
+version="$(egrep "^\s*s.version\s*" SKVersion.podspec | awk '{ gsub("\"", "", $3);  print $3 }')"
 today="$(date '+%Y-%m-%d')"
 
 if git rev-parse "v$version" >/dev/null 2>&1; then

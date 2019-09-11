@@ -1,4 +1,4 @@
-# VersionUpdateChecker
+# SKVersion
 
 App Store Version Update Checker
 
@@ -9,21 +9,21 @@ iOS 11.0+
 ### CocoaPods
 
 ```
-pod 'VersionUpdateChecker', :git => 'https://github.com/twodayslate/VersionUpdateChecker.git'
+pod 'SKVersion', :git => 'https://github.com/twodayslate/SKVersion.git'
 ```
 
 ## Usage
 
 ``` swift
-Bundle.main.hasAppStoreUpdate {
-	(hasUpdate, newVersion, error) in 
+Bundle.main.storeVersion?.update {
+	(canUpdate, version, error) in 
 	guard error == nil else {
-		print("Error! \(error.localizedDescription)")
+		print("An error has occured! \(error.localizedDescription)")
 		return
 	}
 
-	if hasUpdate {
-		print("An update to \(newVersion) is available")
+	if canUpdate {
+		print("An update to \(version) is available")
 	}
 }
 ```

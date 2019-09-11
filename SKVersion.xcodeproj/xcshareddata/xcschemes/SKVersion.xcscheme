@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F6D7E5AB23296F8C00BED0D9"
-               BuildableName = "VersionUpdateChecker.framework"
-               BlueprintName = "VersionUpdateChecker"
-               ReferencedContainer = "container:VersionUpdateChecker.xcodeproj">
+               BuildableName = "SKVersion.framework"
+               BlueprintName = "SKVersion"
+               ReferencedContainer = "container:SKVersion.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F6D7E5AB23296F8C00BED0D9"
-            BuildableName = "VersionUpdateChecker.framework"
-            BlueprintName = "VersionUpdateChecker"
-            ReferencedContainer = "container:VersionUpdateChecker.xcodeproj">
+            BuildableName = "SKVersion.framework"
+            BlueprintName = "SKVersion"
+            ReferencedContainer = "container:SKVersion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F6D7E5AB23296F8C00BED0D9"
-            BuildableName = "VersionUpdateChecker.framework"
-            BlueprintName = "VersionUpdateChecker"
-            ReferencedContainer = "container:VersionUpdateChecker.xcodeproj">
+            BuildableName = "SKVersion.framework"
+            BlueprintName = "SKVersion"
+            ReferencedContainer = "container:SKVersion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

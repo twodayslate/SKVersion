@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D8C851FEA51B56834E232770 /* Pods_VersionUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84850F2D9951A6978D1527DA /* Pods_VersionUpdate.framework */; };
-		F6D7E5B123296F8C00BED0D9 /* VersionUpdateChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D7E5AF23296F8C00BED0D9 /* VersionUpdateChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6D7E5B823296F9B00BED0D9 /* VersionUpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D7E5B723296F9B00BED0D9 /* VersionUpdateChecker.swift */; };
+		F6D7E5B123296F8C00BED0D9 /* SKVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D7E5AF23296F8C00BED0D9 /* SKVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6D7E5B823296F9B00BED0D9 /* SKVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D7E5B723296F9B00BED0D9 /* SKVersion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BCA1E99646AF27C317C5F2A /* Pods-VersionUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersionUpdate.release.xcconfig"; path = "Target Support Files/Pods-VersionUpdate/Pods-VersionUpdate.release.xcconfig"; sourceTree = "<group>"; };
 		84850F2D9951A6978D1527DA /* Pods_VersionUpdate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VersionUpdate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B593421A3A86EC5659FD6F4E /* Pods-VersionUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersionUpdate.debug.xcconfig"; path = "Target Support Files/Pods-VersionUpdate/Pods-VersionUpdate.debug.xcconfig"; sourceTree = "<group>"; };
-		F6D7E5AC23296F8C00BED0D9 /* VersionUpdateChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionUpdateChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6D7E5AF23296F8C00BED0D9 /* VersionUpdateChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionUpdateChecker.h; sourceTree = "<group>"; };
+		F6D7E5AC23296F8C00BED0D9 /* SKVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D7E5AF23296F8C00BED0D9 /* SKVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKVersion.h; sourceTree = "<group>"; };
 		F6D7E5B023296F8C00BED0D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6D7E5B723296F9B00BED0D9 /* VersionUpdateChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionUpdateChecker.swift; sourceTree = "<group>"; };
+		F6D7E5B723296F9B00BED0D9 /* SKVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKVersion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 		F6D7E5A223296F8C00BED0D9 = {
 			isa = PBXGroup;
 			children = (
-				F6D7E5AE23296F8C00BED0D9 /* VersionUpdateChecker */,
+				F6D7E5AE23296F8C00BED0D9 /* SKVersion */,
 				F6D7E5AD23296F8C00BED0D9 /* Products */,
 				012FA8FDB6ED7F25B75AA389 /* Pods */,
 				23740345B40309AE1CE1253A /* Frameworks */,
@@ -64,19 +64,19 @@
 		F6D7E5AD23296F8C00BED0D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6D7E5AC23296F8C00BED0D9 /* VersionUpdateChecker.framework */,
+				F6D7E5AC23296F8C00BED0D9 /* SKVersion.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F6D7E5AE23296F8C00BED0D9 /* VersionUpdateChecker */ = {
+		F6D7E5AE23296F8C00BED0D9 /* SKVersion */ = {
 			isa = PBXGroup;
 			children = (
-				F6D7E5AF23296F8C00BED0D9 /* VersionUpdateChecker.h */,
-				F6D7E5B723296F9B00BED0D9 /* VersionUpdateChecker.swift */,
+				F6D7E5AF23296F8C00BED0D9 /* SKVersion.h */,
+				F6D7E5B723296F9B00BED0D9 /* SKVersion.swift */,
 				F6D7E5B023296F8C00BED0D9 /* Info.plist */,
 			);
-			path = VersionUpdateChecker;
+			path = SKVersion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,16 +86,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6D7E5B123296F8C00BED0D9 /* VersionUpdateChecker.h in Headers */,
+				F6D7E5B123296F8C00BED0D9 /* SKVersion.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F6D7E5AB23296F8C00BED0D9 /* VersionUpdateChecker */ = {
+		F6D7E5AB23296F8C00BED0D9 /* SKVersion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6D7E5B423296F8C00BED0D9 /* Build configuration list for PBXNativeTarget "VersionUpdateChecker" */;
+			buildConfigurationList = F6D7E5B423296F8C00BED0D9 /* Build configuration list for PBXNativeTarget "SKVersion" */;
 			buildPhases = (
 				5AE506E4711E432C18085624 /* [CP] Check Pods Manifest.lock */,
 				F6D7E5A723296F8C00BED0D9 /* Headers */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = VersionUpdateChecker;
+			name = SKVersion;
 			productName = VersionUpdate;
-			productReference = F6D7E5AC23296F8C00BED0D9 /* VersionUpdateChecker.framework */;
+			productReference = F6D7E5AC23296F8C00BED0D9 /* SKVersion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F6D7E5A623296F8C00BED0D9 /* Build configuration list for PBXProject "VersionUpdateChecker" */;
+			buildConfigurationList = F6D7E5A623296F8C00BED0D9 /* Build configuration list for PBXProject "SKVersion" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F6D7E5AB23296F8C00BED0D9 /* VersionUpdateChecker */,
+				F6D7E5AB23296F8C00BED0D9 /* SKVersion */,
 			);
 		};
 /* End PBXProject section */
@@ -184,7 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6D7E5B823296F9B00BED0D9 /* VersionUpdateChecker.swift in Sources */,
+				F6D7E5B823296F9B00BED0D9 /* SKVersion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +331,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.twodayslate.VersionUpdateChecker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twodayslate.SKVersion;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -358,7 +358,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.twodayslate.VersionUpdateChecker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twodayslate.SKVersion;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -369,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F6D7E5A623296F8C00BED0D9 /* Build configuration list for PBXProject "VersionUpdateChecker" */ = {
+		F6D7E5A623296F8C00BED0D9 /* Build configuration list for PBXProject "SKVersion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F6D7E5B223296F8C00BED0D9 /* Debug */,
@@ -378,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6D7E5B423296F8C00BED0D9 /* Build configuration list for PBXNativeTarget "VersionUpdateChecker" */ = {
+		F6D7E5B423296F8C00BED0D9 /* Build configuration list for PBXNativeTarget "SKVersion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F6D7E5B523296F8C00BED0D9 /* Debug */,
