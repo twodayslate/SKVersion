@@ -27,12 +27,12 @@ extension Bundle {
             block(false, nil, URLError(.badURL))
             return
         }
-        VersionUpdateChecker(bundleId).hasAppStoreUpdate(completion: block, fromVersion: version)
+        VersionUpdateChecker(bundleId).hasAppStoreUpdate(fromVersion: version, completion: block)
     }
 }
 
 /// Version Update Checker
-/// - Reference: https://stackoverflow.com/questions/6256748/check-if-my-app-has-a-new-version-on-appstore
+/// - SeeAlso: https://stackoverflow.com/questions/6256748/check-if-my-app-has-a-new-version-on-appstore
 open class VersionUpdateChecker {
     /// URL used to check for new version results
     open var checkUrl: URL? {
@@ -53,7 +53,14 @@ open class VersionUpdateChecker {
     public var session = URLSession.shared
     
     /// Checks if there is an App Store update
-    open func hasAppStoreUpdate(completion block: @escaping ((Bool, Version?, Error?)->Void), fromVersion: Version) {
+    /// - parameters:
+    ///     - fromVersion: the version to compare against
+    ///                 The default value is `version`
+    ///     - block: callback
+    ///     - hasUpdate: Whether or not an update is available on the App Store
+    ///     - version: App Store Version available
+    ///     - error: Any potential errors
+    open func hasAppStoreUpdate(fromVersion: Version, completion block: @escaping ((_ hasUpdate: Bool, _ version: Version?, _ error: Error?)->Void)) {
         guard let checkUrl = self.checkUrl else {
             block(false, nil, URLError(.badURL))
             return
