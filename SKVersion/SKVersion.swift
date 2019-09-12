@@ -20,8 +20,8 @@ extension Bundle {
     }
 }
 
-/// Aoo Store Version Update Checker
-/// - SeeAlso: https://stackoverflow.com/questions/6256748/check-if-my-app-has-a-new-version-on-appstore
+/// App Store Version Update Checker
+/// - SeeAlso: [Check if my app has a new version on AppStore on StackOverflow](https://stackoverflow.com/questions/6256748/check-if-my-app-has-a-new-version-on-appstore)
 open class SKVersion {
     /// URL used to check for new version results
     open var endpoint: URL? {
@@ -31,10 +31,12 @@ open class SKVersion {
     
     /// Bundle Identifier
     public let bundleId: String
-    // version to compare against
+    /// version to compare against
     private var _latestVersion: Version? = nil
+    /// The current version
     public var current: Version
 
+    /// The latest version live on the App Store
     public var latest: Version? {
         get {
             if _latestVersion == nil {
@@ -83,13 +85,9 @@ open class SKVersion {
                         return
                 }
                 
-                let liveVersion = try VersionParser(strict: false).parse(string: versionString)
+                self._latestVersion = try VersionParser(strict: false).parse(string: versionString)
                 
-                if(liveVersion > self.current) {
-                    self._latestVersion = liveVersion
-                }
-                
-                block?(self.current < liveVersion, liveVersion, nil)
+                block?(self.current < self.latest!, self.latest!, nil)
                 return
             } catch {
                 block?(false, nil, error)

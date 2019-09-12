@@ -13,7 +13,7 @@
     <a title="SKVersion  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">SKVersion  Docs</a> (77% documented)</p>
+        <p><a href="index.html">SKVersion &#39;1.0.0&#39; Docs</a> (100% documented)</p>
         <p class="header-right"><a href="https://github.com/twodayslate/SKVersion"><img src="img/gh.png"/>View on GitHub</a></p>
         <p class="header-right"><a href="dash-feed://https%3A%2F%2Ftwodayslate%2Egithub%2Eio%2FSKVersion%2Freference%2Fdocsets%2FSKVersion%2Exml"><img src="img/dash.png"/>Install in Dash</a></p>
       </div>
@@ -61,14 +61,14 @@
 </code></pre>
 <h2 id='usage' class='heading'>Usage</h2>
 <pre class="highlight swift"><code><span class="kt">Bundle</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">storeVersion</span><span class="p">?</span><span class="o">.</span><span class="n">update</span> <span class="p">{</span>
-    <span class="p">(</span><span class="n">canUpdate</span><span class="p">,</span> <span class="n">version</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span> 
+    <span class="p">(</span><span class="n">canUpdate</span><span class="p">,</span> <span class="n">version</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
     <span class="k">guard</span> <span class="n">error</span> <span class="o">==</span> <span class="kc">nil</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="nf">print</span><span class="p">(</span><span class="s">"An error has occured! </span><span class="se">\(</span><span class="n">error</span><span class="o">.</span><span class="n">localizedDescription</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"An error has occured! </span><span class="se">\(</span><span class="n">error</span><span class="o">!.</span><span class="n">localizedDescription</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
         <span class="k">return</span>
     <span class="p">}</span>
 
     <span class="k">if</span> <span class="n">canUpdate</span> <span class="p">{</span>
-        <span class="nf">print</span><span class="p">(</span><span class="s">"An update to </span><span class="se">\(</span><span class="n">version</span><span class="se">)</span><span class="s"> is available"</span><span class="p">)</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"An update to </span><span class="se">\(</span><span class="kt">String</span><span class="p">(</span><span class="nv">describing</span><span class="p">:</span> <span class="n">version</span><span class="p">)</span><span class="se">)</span><span class="s"> is available"</span><span class="p">)</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>

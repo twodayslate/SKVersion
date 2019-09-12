@@ -1,19 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/twodayslate/Development/VersionUpdate/VersionUpdateChecker/SKVersion.swift",
-      "line": 36,
-      "symbol": "SKVersion.current",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/twodayslate/Development/VersionUpdate/VersionUpdateChecker/SKVersion.swift",
-      "line": 38,
-      "symbol": "SKVersion.latest",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/twodayslate/Development/VersionUpdate"
 }
