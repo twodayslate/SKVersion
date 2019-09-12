@@ -74,13 +74,16 @@ open class SKVersion {
             }
             
             do {
+                
                 guard let reponseJson = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String:Any],
                     let result = (reponseJson["results"] as? [Any])?.first as? [String: Any],
-                    let versionString = result["version"] as? String, let liveVersion = Version(versionString)
+                    let versionString = result["version"] as? String
                     else{
                         block?(false, nil, URLError(.badServerResponse))
                         return
                 }
+                
+                let liveVersion = try VersionParser(strict: false).parse(string: versionString)
                 
                 if(liveVersion > self.current) {
                     self._latestVersion = liveVersion

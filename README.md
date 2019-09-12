@@ -16,14 +16,14 @@ pod 'SKVersion', :git => 'https://github.com/twodayslate/SKVersion.git'
 
 ``` swift
 Bundle.main.storeVersion?.update {
-	(canUpdate, version, error) in 
-	guard error == nil else {
-		print("An error has occured! \(error.localizedDescription)")
-		return
-	}
-
-	if canUpdate {
-		print("An update to \(version) is available")
-	}
+    (canUpdate, version, error) in
+    guard error == nil else {
+        print("An error has occured! \(error!.localizedDescription)")
+        return
+    }
+    
+    if canUpdate {
+        print("An update to \(String(describing: version)) is available")
+    }
 }
 ```
