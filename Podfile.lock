@@ -1,16 +1,16 @@
 PODS:
-  - Version (0.7.0)
+  - Version (0.7.1)
 
 DEPENDENCIES:
-  - Version
+  - Version (~> 0.7.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Version
 
 SPEC CHECKSUMS:
-  Version: 748646b64528b12654498912dc3bd065867169cc
+  Version: d7b9b7860c8a02790b15c730d50849d6004076a1
 
-PODFILE CHECKSUM: c1335cc0fb99a1bb565e2171402db1a5c40e1594
+PODFILE CHECKSUM: a19c20dd6b15244ab3aff3e893941b45a49da276
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.3

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SKVersion'
-  s.version          = '1.0.0'
+  s.version          = '2.0.0'
   s.summary          = 'Version Update Checker'
   s.swift_versions   = ['5.0']
 

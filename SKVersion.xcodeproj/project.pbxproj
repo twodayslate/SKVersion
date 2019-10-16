@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D8C851FEA51B56834E232770 /* Pods_VersionUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84850F2D9951A6978D1527DA /* Pods_VersionUpdate.framework */; };
+		3C49056E832F99971B1F486D /* Pods_SKVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E937725A7F1181C5A2A9512E /* Pods_SKVersion.framework */; };
 		F6D7E5B123296F8C00BED0D9 /* SKVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D7E5AF23296F8C00BED0D9 /* SKVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6D7E5B823296F9B00BED0D9 /* SKVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D7E5B723296F9B00BED0D9 /* SKVersion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BCA1E99646AF27C317C5F2A /* Pods-VersionUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersionUpdate.release.xcconfig"; path = "Target Support Files/Pods-VersionUpdate/Pods-VersionUpdate.release.xcconfig"; sourceTree = "<group>"; };
-		84850F2D9951A6978D1527DA /* Pods_VersionUpdate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VersionUpdate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30152585BF1396971C32FA55 /* Pods-SKVersion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKVersion.release.xcconfig"; path = "Target Support Files/Pods-SKVersion/Pods-SKVersion.release.xcconfig"; sourceTree = "<group>"; };
 		B593421A3A86EC5659FD6F4E /* Pods-VersionUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersionUpdate.debug.xcconfig"; path = "Target Support Files/Pods-VersionUpdate/Pods-VersionUpdate.debug.xcconfig"; sourceTree = "<group>"; };
+		E937725A7F1181C5A2A9512E /* Pods_SKVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB90CD08E5387F71B2135D3C /* Pods-SKVersion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKVersion.debug.xcconfig"; path = "Target Support Files/Pods-SKVersion/Pods-SKVersion.debug.xcconfig"; sourceTree = "<group>"; };
 		F6D7E5AC23296F8C00BED0D9 /* SKVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D7E5AF23296F8C00BED0D9 /* SKVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKVersion.h; sourceTree = "<group>"; };
 		F6D7E5B023296F8C00BED0D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,7 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C851FEA51B56834E232770 /* Pods_VersionUpdate.framework in Frameworks */,
+				3C49056E832F99971B1F486D /* Pods_SKVersion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +41,8 @@
 			children = (
 				B593421A3A86EC5659FD6F4E /* Pods-VersionUpdate.debug.xcconfig */,
 				1BCA1E99646AF27C317C5F2A /* Pods-VersionUpdate.release.xcconfig */,
+				EB90CD08E5387F71B2135D3C /* Pods-SKVersion.debug.xcconfig */,
+				30152585BF1396971C32FA55 /* Pods-SKVersion.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -46,7 +50,7 @@
 		23740345B40309AE1CE1253A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				84850F2D9951A6978D1527DA /* Pods_VersionUpdate.framework */,
+				E937725A7F1181C5A2A9512E /* Pods_SKVersion.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,6 +137,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F6D7E5A223296F8C00BED0D9;
 			productRefGroup = F6D7E5AD23296F8C00BED0D9 /* Products */;
@@ -170,7 +175,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VersionUpdate-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SKVersion-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -315,7 +320,7 @@
 		};
 		F6D7E5B523296F8C00BED0D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B593421A3A86EC5659FD6F4E /* Pods-VersionUpdate.debug.xcconfig */;
+			baseConfigurationReference = EB90CD08E5387F71B2135D3C /* Pods-SKVersion.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -331,6 +336,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.twodayslate.SKVersion;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -342,7 +348,7 @@
 		};
 		F6D7E5B623296F8C00BED0D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BCA1E99646AF27C317C5F2A /* Pods-VersionUpdate.release.xcconfig */;
+			baseConfigurationReference = 30152585BF1396971C32FA55 /* Pods-SKVersion.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -358,6 +364,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.twodayslate.SKVersion;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
